@@ -46,6 +46,38 @@ The application utilizes **ngrok** to create secure tunnels and expose a Flask w
 
 ---
 
+## Quick Download & System Requirements
+
+### System Requirements (IMPORTANT - READ BEFORE DOWNLOADING)
+
+**Operating System (REQUIRED):**
+- ✅ Windows 10 (Build 1909 or later)
+- ✅ Windows 11 (All versions)
+- ❌ Windows 7, Windows 8, or older - NOT supported
+- ❌ 32-bit Systems - NOT supported (64-bit only)
+
+**Important**: This application requires **Windows 10 or Windows 11 (64-bit)** to run. If your system does not meet these requirements, installation will fail.
+
+### Download Application
+
+**Download HONKED Security v1.5:**
+- 📥 [Download from Google Drive](https://drive.google.com/file/d/1iWAsc1SOnEM3XCyzl72Qa3aGMrejNLlJ/view?usp=drive_link)
+
+**What's Included:**
+- Pre-compiled Windows executable (myapp.exe)
+- Inno Setup installer (mysetup.exe)
+- All dependencies configured
+- Ready to use on Windows 10/11 (64-bit)
+
+**Installation Steps After Download:**
+1. Download the file from the link above
+2. Extract/unzip if necessary
+3. Run the installer (.exe file)
+4. Follow the installation wizard
+5. Launch from Start Menu or Desktop shortcut
+
+---
+
 ## Complete Setup Guide: Start to Finish
 
 ### Phase 1: System Prerequisites Check
@@ -433,7 +465,7 @@ pip freeze > requirements.txt
 ```
 Application Name: HONKED_SECURITY BY CAPPIAVI
 Version: 1.5
-Publisher: Cappiavi, Khert Garde
+Publisher: Cappiavi
 Executable: myapp.exe
 Unique Identifier (GUID): {1202F8A6-E6B9-46B3-8D39-CEE86C80445D}
 ```
@@ -1232,7 +1264,7 @@ pip uninstall pywebview requests flask pyngrok pyperclip -y
 
 *Note: Uninstalling Python is optional. Keep it if you plan to use Python for other projects.*
 
-**Developer**: Cappiavi & Khert Garde  
+**Developer**: Cappiavi  
 **Application**: HONKED Security Control Panel  
 **Version**: 1.5  
 **License**: Proprietary (Non-commercial use noted in Inno Setup configuration)
@@ -1728,7 +1760,7 @@ If you've tried all troubleshooting steps and still have issues:
    - Usually in application folder or Documents
 
 4. **Contact developer**:
-   - Developer: Cappiavi & Khert Garde
+   - Developer: Cappiavi
    - Include all information from steps 1-3
 
 ---
