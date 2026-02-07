@@ -110,13 +110,9 @@ cd HONKED-SECURITY---IP-TRACER-APP
 Your directory structure will look like:
 ```
 HONKED-SECURITY---IP-TRACER-APP/
-├── README.md                                    (This file)
-├── Python End/
-│   └── Honked/
-│       ├── HONKED SECURITY.py                 (Main application)
-│       ├── HONKED.py                          (Base version)
-│       ├── HONKED_ADVANCED.py                 (Variant)
-│       └── HONKSEC.py                         (Alternative variant)
+├── README.md                      (This file - Installation & Setup Guide)
+├── HONKED SECURITY.py             (Main application - Run this file)
+└── music.mp3                      (Audio alert for victim page)
 ```
 
 ### Step 2: Configure API Keys
