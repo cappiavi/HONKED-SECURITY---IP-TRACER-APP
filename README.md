@@ -1,48 +1,125 @@
+![Alt](https://repobeats.axiom.co/api/embed/d0f8ea5fddd1e534fca02624186f18476937a8b3.svg "Repobeats analytics image")
+
+View Image
+Back
+
+<!-- SEO Meta Information -->
+<!-- Keywords: IP tracker, geolocation tracking, security monitoring, network monitoring, IP geolocation, Flask application, ngrok tunnel, web security, real-time tracking, visitor tracking, network security, Python security tool, hackathon project -->
+<!-- Description: HONKED Security - Advanced IP tracker and geolocation monitoring application with real-time visitor tracking, ngrok tunnel integration, and interactive web control panel -->
+
 # HONKED SECURITY - CAPPIAVI v1.5
+
+**IP Tracker | Geolocation Monitoring | Network Security | Real-Time Visitor Tracking**
 
 ## Project Overview
 
-**HONKED Security** is an advanced web-based security monitoring and IP tracking application developed by **Cappiavi** and **Khert Garde**. This project combines a Python Flask backend with a modern web-based control panel interface to monitor and track incoming connections with real-time geolocation mapping and hit logging.
+**HONKED Security** is an advanced **IP tracking application** and **geolocation monitoring system** with real-time visitor tracking capabilities. This open-source **network security monitoring tool** combines a Python Flask backend with a modern web-based control panel interface to monitor and track incoming connections with real-time geolocation mapping, IP address resolution, and comprehensive hit logging.
 
-The application utilizes **ngrok** to create secure tunnels and expose a Flask web server to the internet, allowing remote monitoring of captured traffic and IP information. It features a sophisticated control panel with:
-- Real-time geolocation mapping using Leaflet
-- Live terminal logging and system status updates
-- Multi-key failover mechanism for cluster connectivity
-- Hit counter and visitor tracking
-- Matrix-style visual alerts on visitor pages
+Perfect for:
+- **Security researchers** and penetration testing professionals
+- **Educational purposes** and cybersecurity training
+- **Network monitoring** and traffic analysis
+- **Real-time geolocation tracking** demonstrations
+- **IP intelligence** gathering and analysis
+- **Web security** monitoring and incident response
+
+The application utilizes **ngrok** (a popular tunneling service) to create secure tunnels and expose a Flask web server to the internet, allowing remote real-time monitoring of captured traffic and IP information. It features a sophisticated **visitor tracking system** with:
+- Real-time **IP geolocation mapping** using Leaflet.js and IP-API service
+- Live terminal logging and system status updates for security monitoring
+- Multi-key **ngrok failover mechanism** for cluster connectivity and redundancy
+- **Hit counter** and comprehensive visitor tracking database
+- Matrix-style visual alerts and animations on visitor pages
+- Advanced **fingerprinting capabilities** (GPU detection, battery status, local IP identification)
 - **Note**: Audio notifications only available in development mode (source code version)
 
 ---
 
-## Key Features
+## Key Features & Capabilities
 
 ### 1. **Real-Time IP & Geolocation Tracking**
-   - Captures visitor IP addresses and geolocation data using the IP-API service
-   - Provides real-time mapping of visitor locations on an interactive Leaflet map
-   - Displays city, country, latitude, and longitude information
+   - Captures visitor **IP addresses** with precision geolocation data using ip-api.com service
+   - Provides real-time mapping of visitor locations on an interactive **Leaflet map**
+   - Displays detailed location information: city, country, region, latitude, and longitude
+   - **IP intelligence**: Accurate geographic positioning and location-based analytics
 
-### 2. **Secure Tunnel Management**
+### 2. **Secure Tunnel Management with ngrok**
    - Integrates with **ngrok** to create public URLs for the Flask server
-   - Implements failover mechanism with multiple cluster keys
-   - Automatic reconnection on key failure
-   - Dynamic URL management and sharing capabilities
+   - Implements **failover mechanism** with multiple cluster keys for reliability
+   - Automatic **reconnection** on key failure for continuous operation
+   - Dynamic URL management and clipboard-friendly link sharing
+   - **Network tunneling** capabilities for exposing local Flask server to internet
 
-### 3. **Web-Based Control Panel**
-   - Built with HTML, CSS, and JavaScript
-   - Features split layout: control sidebar + main map/terminal view
-   - Real-time terminal output for system logs and alerts
-   - Status monitoring and system statistics
+### 3. **Web-Based Control Panel Dashboard**
+   - Built with HTML5, CSS3, and JavaScript (no external dependencies)
+   - Features split-panel layout: control sidebar + interactive map/terminal view
+   - Real-time terminal output for **system logs** and **security alerts**
+   - Status monitoring, hit counting, and comprehensive **visitor statistics**
 
-### 4. **Interactive Visitor Pages**
-   - Matrix-style visual alert pages ("YOU GOT HONKED")
+### 4. **Interactive Visitor Alert Pages**
+   - Matrix-style visual alert pages ("YOU GOT HONKED") with custom branding
    - Canvas-based animated backgrounds with real-time rendering
-   - Responsive design with bright, attention-grabbing visual alerts
+   - Responsive design with bright, attention-grabbing **visual security alerts**
+   - Advanced **visitor fingerprinting**: GPU name detection, battery status, screen resolution, local IP identification
    - **Audio Support**: Only available in development mode with source code (not in compiled `.exe`)
 
-### 5. **Multi-Thread Support**
-   - Asynchronous operation of Flask server and tunnel management
-   - Background threading for non-blocking operations
-   - Seamless UI updates via JavaScript evaluation
+### 5. **Multi-Thread Support & Asynchronous Operations**
+   - Asynchronous operation of **Flask server** and tunnel management
+   - Background threading for non-blocking operations and reliability
+   - Seamless UI updates via JavaScript evaluation for real-time responsiveness
+
+---
+
+## Technology Stack & Dependencies
+
+### Backend Technologies
+- **Language**: Python 3.7+
+- **Web Framework**: Flask 2.x (WSGI application)
+- **Tunneling**: ngrok (network tunneling and secure exposure)
+- **Geolocation**: ip-api.com (free tier up to 45 requests/minute)
+- **GUI**: pywebview (native desktop window)
+- **HTTP Client**: requests library (API communication)
+
+### Frontend Technologies
+- **Markup**: HTML5
+- **Styling**: CSS3 (dark theme with Matrix aesthetic)
+- **Client Scripts**: Vanilla JavaScript (no frameworks)
+- **Mapping**: Leaflet.js v1.9.4 (interactive geolocation mapping)
+- **Graphics**: Canvas API (Matrix-style animations)
+- **WebGL**: WEBGL_debug_renderer_info (GPU detection)
+
+### Security & Features
+- **Tunnel Security**: Public URL exposure via ngrok
+- **IP Detection**: X-Forwarded-For header parsing for proxy support
+- **Browser Fingerprinting**: GPU, battery status, screen resolution, timezone, language
+- **Network Detection**: WebRTC-based local IP detection
+- **Multi-Threading**: Asynchronous operations with Python threading
+- **Failover Mechanism**: Cluster key rotation for reliability
+
+### Required Python Packages
+```
+pywebview>=5.0
+requests>=2.28.0
+flask>=2.2.0
+pyngrok>=7.0.0
+pyperclip>=1.8.2
+```
+
+---
+
+## Tags, Categories & Topics
+
+### Project Categories
+- **Security**: IP Tracking, Geolocation Monitoring, Network Security
+- **Development**: Python, Web Application, Desktop GUI
+- **Technologies**: Flask, ngrok, WebGL, WebRTC
+- **Use Cases**: Security Research, Penetration Testing, Educational
+- **Features**: Real-time Tracking, Visitor Fingerprinting, Interactive Dashboard
+
+### Search Keywords
+`ip-tracker`, `geolocation`, `security-monitoring`, `network-monitoring`, `python-security`, `flask-application`, `ngrok-tunnel`, `real-time-tracking`, `ip-geolocation`, `visitor-tracking`, `network-security`, `python-tool`, `security-research`, `penetration-testing`, `web-security`, `ip-address-tracker`, `location-tracking`, `cybersecurity-tool`
+
+### Related Technologies
+Python, Flask, ngrok, Leaflet.js, WebRTC, WebGL, HTML5, CSS3, JavaScript, IP-API, Geolocation, Network Security, Cybersecurity, Web Development, Desktop Applications
 
 ---
 
