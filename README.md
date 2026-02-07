@@ -196,12 +196,12 @@ If you have a `requirements.txt` file:
 #### Step 4.1: Understanding ngrok Cluster Keys
 The application uses **ngrok cluster keys** for tunnel creation. These are authentication tokens specific to your ngrok account.
 
-The application contains 3 default cluster keys:
-- `39IqyiGfAVlXGoEbC8cCAATxhrr_6aQAdPFU6tSCowhvS5JTK`
-- `39J3nGR7GqUf8upt9WD0a1oBXd3_4GYhm6ZHkA3dbhewTvrH5`
-- `39J43P5sSGaLaTnDlmPbBvTMKMp_5zipPsrY7AXusMUeBDJ5K`
+The application contains 3 default cluster keys configured in the source code:
+- Key 1: `[Your ngrok auth token here]`
+- Key 2: `[Your ngrok auth token here]` (for failover)
+- Key 3: `[Your ngrok auth token here]` (for failover)
 
-**Important**: If these keys are invalid or expired, you'll need to update them in the application source code (HONKSEC.py).
+**Important**: The default keys may be expired or invalid. You should update them with your own ngrok authentication tokens in the application source code (HONKSEC.py).
 
 #### Step 4.2: Verify ngrok Access (Optional but Recommended)
 1. Visit **https://ngrok.com** in your browser
@@ -343,12 +343,12 @@ If the default keys expire:
 3. Find this section (around line 10):
    ```python
    CLUSTER_KEYS = [
-       "39IqyiGfAVlXGoEbC8cCAATxhrr_6aQAdPFU6tSCowhvS5JTK",
-       "39J3nGR7GqUf8upt9WD0a1oBXd3_4GYhm6ZHkA3dbhewTvrH5",
-       "39J43P5sSGaLaTnDlmPbBvTMKMp_5zipPsrY7AXusMUeBDJ5K"
+       "[NGROK_AUTH_TOKEN_1]",
+       "[NGROK_AUTH_TOKEN_2]",
+       "[NGROK_AUTH_TOKEN_3]"
    ]
    ```
-4. Replace with your ngrok auth tokens
+4. Replace `[NGROK_AUTH_TOKEN_1]`, `[NGROK_AUTH_TOKEN_2]`, and `[NGROK_AUTH_TOKEN_3]` with your actual ngrok authentication tokens from https://ngrok.com/admin/auth
 5. Save the file (Ctrl+S)
 6. Restart the application
 
