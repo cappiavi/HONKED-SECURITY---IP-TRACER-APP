@@ -1,3 +1,8 @@
+![Alt](https://repobeats.axiom.co/api/embed/d0f8ea5fddd1e534fca02624186f18476937a8b3.svg "Repobeats analytics image")
+
+View Image
+Back
+
 # HONKED SECURITY - CAPPIAVI v1.5
 
 ## Project Overview
